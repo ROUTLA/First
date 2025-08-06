@@ -1,1 +1,135 @@
-yyy
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AutoHub - Buy Your Dream Car</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #222;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #333;
+      display: flex;
+      justify-content: center;
+    }
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      display: inline-block;
+      text-decoration: none;
+    }
+    nav a:hover {
+      background-color: #555;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1570129477492-45c003edd2be') no-repeat center center/cover;
+      height: 300px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-shadow: 2px 2px 5px black;
+    }
+    .section {
+      padding: 40px;
+    }
+    .cars {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .car {
+      border: 1px solid #ccc;
+      padding: 16px;
+      width: 300px;
+    }
+    .car img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    form {
+      max-width: 500px;
+      margin: auto;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+    }
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>AutoHub</h1>
+    <p>Your Trusted Car Marketplace</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#cars">Cars for Sale</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="hero" id="home">
+    <h2>Find Your Dream Car Today</h2>
+  </div>
+
+  <section class="section" id="cars">
+    <h2>Featured Cars</h2>
+    <div class="cars">
+      <div class="car">
+        <img src="https://images.unsplash.com/photo-1605478371422-c2dd56a9d6cf" alt="Car 1">
+        <h3>2022 Tesla Model 3</h3>
+        <p>Price: $39,990</p>
+        <p>Electric | Automatic | 15,000 miles</p>
+      </div>
+      <div class="car">
+        <img src="https://images.unsplash.com/photo-1511391036591-1c82f9c1516d" alt="Car 2">
+        <h3>2019 BMW M3</h3>
+        <p>Price: $45,000</p>
+        <p>Gasoline | Manual | 30,000 miles</p>
+      </div>
+      <div class="car">
+        <img src="https://images.unsplash.com/photo-1549924231-f129b911e442" alt="Car 3">
+        <h3>2021 Audi Q5</h3>
+        <p>Price: $41,500</p>
+        <p>Diesel | Automatic | 10,000 miles</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Message" required></textarea>
+      <input type="submit" value="Send Message" />
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 AutoHub. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
